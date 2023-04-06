@@ -15,10 +15,11 @@ let AppData = {
         {From: "eticket@amadeus.com", Subject: "Your Electronic Receipt" },
     ],
     Sent: [
-        {Recepient: "Richard", Subject: "Taxes", Recepient: "Nunu", Subject: "Lecture Notes" }
+        {Recepient: "Richard", Subject: "Taxes", Recepient: "Nunu", Subject: "Lecture Notes" },
     ],
     Drafts: [
-        {Subject: "Enrique Rangel's Resume", Subject: "(no subject)"}
+        {Subject: "Enrique Rangel's Resume"},
+        { Subject: "(no subject)"},
     ],
     Catergories: [
         {Social: ["Linked In","Youtube", "Twitter"]},
@@ -38,4 +39,4 @@ AppData.Drafts[0].status="Marked Sent";
 console.log("This email is marked sent:", AppData.Drafts[0]);
 // Add a draft email to the drafts mailbox
 AppData.Drafts.push(DraftEmail.AppData.Drafts);
-console.log("A email was drafted to the drafts mailbox", AppData.Draft.DraftEmail);
+console.log("A email was drafted to the drafts mailbox:", AppData.Drafts.DraftEmail);
