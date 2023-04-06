@@ -18,8 +18,7 @@ let AppData = {
         {Recepient: "Richard", Subject: "Taxes", Recepient: "Nunu", Subject: "Lecture Notes" },
     ],
     Drafts: [
-        {Subject: "Enrique Rangel's Resume"},
-        { Subject: "(no subject)"},
+        {Subject: "Enrique Rangel's Resume", anotherSubject: "(no subject)"},
     ],
     Catergories: [
         {Social: ["Linked In","Youtube", "Twitter"]},
@@ -38,5 +37,7 @@ console.log(AppData.Inbox[1])
 AppData.Drafts[0].status="Marked Sent";
 console.log("This email is marked sent:", AppData.Drafts[0]);
 // Add a draft email to the drafts mailbox
-AppData.Drafts.push(DraftEmail.AppData.Drafts);
-console.log("A email was drafted to the drafts mailbox:", AppData.Drafts.DraftEmail);
+let DraftEmail= {Subject:"This is a test", Subject:"This is not a test"}
+console.log("Before: ", AppData.Drafts);
+AppData.Drafts[0] = DraftEmail;
+console.log("After: ", AppData.Drafts);
